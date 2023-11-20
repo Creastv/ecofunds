@@ -1,0 +1,26 @@
+.b-contact .b-contact__wraper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.b-contact .b-contact__wraper .b-contact__col p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.b-contact .b-contact__wraper .b-contact__col .b-contact-links {
+  display: flex;
+  flex-wrap: wrap;
+}
+.b-contact .b-contact__wraper .b-contact__col .b-contact-links a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+.b-contact .b-contact__wraper .b-contact__col .b-contact-links a span {
+  font-size: 26px;
+}/*# sourceMappingURL=contact.css.map */

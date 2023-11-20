@@ -1,0 +1,123 @@
+.b-process {
+  padding: 50px 0;
+}
+@media only screen and (max-width: 768px) {
+  .b-process {
+    padding: 0px;
+  }
+}
+.b-process .steps--center-line::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 1px;
+  height: 100%;
+  background-color: #ad8641;
+}
+.b-process .steps--left-line::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  transform: translate(-50%, 0);
+  width: 1px;
+  height: 100%;
+  background-color: #ad8641;
+}
+.b-process .steps {
+  padding: 20px 0;
+  margin: 30px 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+@media only screen and (max-width: 768px) {
+  .b-process .steps {
+    flex-wrap: wrap;
+  }
+}
+.b-process .steps .left {
+  width: 50%;
+}
+@media only screen and (max-width: 768px) {
+  .b-process .steps .left {
+    width: 100%;
+  }
+}
+.b-process .steps .left .step {
+  text-align: right;
+}
+.b-process .steps .left .step:before {
+  right: -60px;
+}
+.b-process .steps .left .step ul {
+  padding: 0;
+  padding-right: 40px;
+}
+.b-process .steps .left .step ul li:before {
+  left: initial !important;
+  right: -28px;
+}
+.b-process .steps .right {
+  width: 50%;
+}
+@media only screen and (max-width: 768px) {
+  .b-process .steps .right {
+    width: 100%;
+  }
+}
+.b-process .steps .right .step:before {
+  left: -60px;
+}
+.b-process .steps .right .step:nth-child(1) {
+  margin-top: 50px !important;
+}
+.b-process .steps .midel {
+  padding-left: 30px;
+}
+.b-process .steps .midel .step:before {
+  left: -30px;
+}
+.b-process .steps .midel .step .step__wraper {
+  padding: 15px 15px 15px 0;
+}
+.b-process .steps .step {
+  position: relative;
+}
+.b-process .steps .step:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+  background-color: #ad8641;
+  border: 3px solid #fff;
+  border-radius: 100%;
+  top: 20px;
+}
+.b-process .steps .step .step__wraper {
+  padding: 20px;
+}
+.b-process .steps .step .step__wraper h3 {
+  font-size: 24px;
+}
+.b-process .steps .step .step__wraper ul {
+  list-style: none;
+}
+.b-process .steps .step .step__wraper ul li {
+  position: relative;
+}
+.b-process .steps .step .step__wraper ul li:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 8px;
+  height: 8px;
+  background-color: #ad8641;
+  border-radius: 100%;
+  left: -28px;
+  top: 7px;
+}/*# sourceMappingURL=process.css.map */

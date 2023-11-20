@@ -1,0 +1,31 @@
+@import "scss/variable";
+// @import "scss/typo";
+@import "scss/global";
+@import "scss/single";
+@import "scss/archive";
+@import "scss/page";
+@import "scss/btn";
+@import "scss/form";
+
+@import "scss/footer/footer-cta";
+@import "scss/footer/footer-get-know";
+
+.wp-block-spacer {
+  background: rgba(0, 0, 0, 0.1) !important;
+  &:after {
+    content: "Odstęp";
+    display: block;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+  }
+}
+.wp-block {
+  max-width: 90%;
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
+.text-center {
+  text-align: center;
+}

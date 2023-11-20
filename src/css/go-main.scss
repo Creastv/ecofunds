@@ -1,0 +1,29 @@
+@import "scss/variable";
+@import "scss/typo";
+@import "scss/global";
+@import "scss/footer";
+@import "scss/header";
+@import "scss/page";
+@import "scss/single";
+@import "scss/archive";
+
+@import "scss/btn";
+@import "scss/form";
+
+@import "scss/btn";
+@import "scss/form";
+
+// footer
+@import "scss/footer/footer-cta";
+@import "scss/footer/footer-get-know";
+
+.home #header {
+  position: absolute;
+}
+.b-hero {
+  width: 100vw;
+  margin-left: -50vw;
+  left: 50%;
+  position: relative;
+  padding: 150px 0;
+}

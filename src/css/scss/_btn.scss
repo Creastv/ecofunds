@@ -1,0 +1,41 @@
+.btn {
+  color: #fff !important;
+  padding: 20px 30px;
+  // background-color: $main;
+  background: rgb(228, 199, 95);
+  background: linear-gradient(221deg, rgba(228, 199, 95, 1) 0%, rgba(173, 134, 65, 1) 100%);
+  border: 1px solid transparent;
+  text-decoration: none;
+  transition: 0.1s linear;
+  font-weight: 500;
+  font-size: 16px;
+  display: inline-block;
+  align-items: center;
+  &:hover {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.51);
+  }
+  &:active {
+    box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.1);
+    svg {
+      transform: translate(10px, 0);
+    }
+  }
+  svg {
+    margin-right: 25px;
+    transition: all 0.2s linear;
+  }
+}
+.btn-main {
+  display: inline-block;
+}
+
+.btn-revers {
+  color: $main;
+  padding: 10px 25px;
+  border: 1px solid $main;
+  text-decoration: none;
+  &:hover {
+    color: #fff;
+    background-color: $main;
+  }
+}

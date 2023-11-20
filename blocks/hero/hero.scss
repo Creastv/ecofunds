@@ -1,0 +1,95 @@
+@import "../../src/css/scss/variable";
+#header {
+  position: absolute;
+}
+.b-hero {
+  width: 100vw;
+  // height: 70vh;
+  margin-left: -50vw;
+  left: 50%;
+  position: relative;
+  padding: 200px 0;
+  background-size: cover;
+  background-position: center;
+  @media #{$xs} {
+    padding: 150px 0 100px;
+  }
+  .b-hero__col {
+    position: relative;
+    z-index: 2;
+    // max-width: 55%;
+    margin: 0 auto;
+    h1,
+    p {
+      color: #fff;
+    }
+    h1 {
+      font-size: 51px;
+      padding: 0 50px;
+      @media #{$lg} {
+        font-size: 41px;
+      }
+      @media #{$md} {
+        font-size: 34px;
+        padding: 0px;
+      }
+      @media #{$xs} {
+        font-size: 24px;
+      }
+    }
+    p {
+      font-size: 28px;
+      line-height: 34px;
+      margin-top: 20px;
+      @media #{$md} {
+        font-size: 21px;
+        line-height: 27px;
+      }
+      @media #{$xs} {
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+    .b-hero__buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      margin-top: 30px;
+      @media #{$sm} {
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      a {
+        font-size: 18px;
+        padding: 15px 15px;
+        text-align: left;
+        max-width: 400px;
+        display: flex;
+        justify-content: flex-start;
+        @media #{$md} {
+          font-size: 16px;
+          max-width: initial;
+        }
+        @media #{$sm} {
+          padding: 20px;
+        }
+        svg {
+          width: 50px;
+          height: 20px;
+        }
+      }
+      .btn-revers {
+        color: #fff;
+        border: 1px solid #fff;
+        padding: 15px 100px;
+        text-align: center;
+        opacity: 0.8;
+        &:hover {
+          border-color: $main;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

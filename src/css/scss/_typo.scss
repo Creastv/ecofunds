@@ -1,0 +1,92 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: $light-black;
+  overflow-x: hidden !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 700;
+  color: $black;
+  margin: 0;
+  margin-bottom: 30px;
+}
+.h1 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 300;
+  @media #{$sm} {
+    font-size: 28px;
+  }
+}
+.section-h {
+  font-size: 34px;
+  line-height: 40px;
+  @media #{$lg} {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  @media #{$sm} {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+.subhead-h {
+  font-size: 28px;
+  line-height: 34px;
+}
+li {
+  margin-bottom: 20px;
+}
+p,
+li {
+  line-height: 26px;
+  margin: 0;
+}
+p {
+  margin-bottom: 20px;
+}
+ul,
+ol {
+  margin-bottom: 30px;
+}
+
+a {
+  color: $main;
+  text-decoration: none;
+  transition: all 0.1s linear;
+  font-weight: 500;
+}
+.entry-content {
+  a {
+    color: $main;
+  }
+  p,
+  li,
+  a {
+    // font-size: 14px;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.underline {
+  text-decoration: underline;
+  -webkit-text-decoration-color: $main; /* Safari */
+  text-decoration-color: $main;
+}

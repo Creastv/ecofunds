@@ -1,0 +1,65 @@
+@import "../../src/css/scss/variable";
+
+.b__cta {
+  padding: 50px 0;
+  background-color: $main;
+  background-position: center;
+  // background-attachment: fixed;
+  position: relative;
+
+  @media #{$sm} {
+    background-attachment: initial;
+    background-size: cover;
+  }
+  @media #{$sm} {
+    padding: 30px 0;
+    background-attachment: initial;
+    background-size: cover;
+  }
+  .b__cta__wraper {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    @media #{$sm} {
+      flex-wrap: wrap;
+    }
+    .b__cta__left {
+      flex: auto;
+      p {
+        font-size: 28px;
+        line-height: 38px;
+        margin: 0;
+        padding: 0;
+        font-weight: 500;
+        color: #fff;
+        @media #{$lg} {
+          br {
+            display: none;
+          }
+        }
+        @media #{$sm} {
+          margin-bottom: 30px;
+          font-size: 21px;
+          line-height: 31px;
+          br {
+            display: none;
+          }
+        }
+      }
+    }
+    .b__cta__right {
+      .btn {
+        min-width: 300px;
+      }
+    }
+  }
+}
+
+.b__cta.wrap-full {
+  width: 100vw !important;
+  margin-left: -50vw !important;
+  left: 50% !important;
+  position: relative !important;
+}
