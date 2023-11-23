@@ -4,6 +4,12 @@
   @media #{$md} {
     margin-bottom: 0px;
   }
+  @media #{$sm} {
+    width: 100vw;
+    left: 50%;
+    margin-left: -50vw;
+    position: relative;
+  }
 
   .b__gtk__wraper {
     display: flex;
@@ -46,6 +52,9 @@
         position: relative;
         min-height: 400px;
         height: 100%;
+        @media #{$sm} {
+          min-height: 100px;
+        }
         &:before {
           content: "";
           position: absolute;

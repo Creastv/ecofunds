@@ -53,6 +53,11 @@
   background-size: cover;
   position: relative;
 }
+@media only screen and (max-width: 768px) {
+  .b-num .b-num__wraper .b-num__col .img {
+    min-height: 150px;
+  }
+}
 .b-num .b-num__wraper .b-num__col .img:before {
   content: "";
   position: absolute;

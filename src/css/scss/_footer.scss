@@ -120,6 +120,9 @@ footer {
     @media #{$lg} {
       order: 2;
     }
+    @media #{$xs} {
+      width: 100%;
+    }
     p {
       font-size: 16px;
       font-weight: 300;

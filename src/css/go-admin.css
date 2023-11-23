@@ -1,7 +1,6 @@
 @charset "UTF-8";
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 *,
@@ -15,7 +14,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: #fff;
-  overflow-x: hidden;
 }
 
 #header {
@@ -644,6 +642,7 @@ form .wpcf7-not-valid-tip {
     padding: 0 10px;
     justify-content: center;
     text-align: center;
+    gap: 0px;
   }
 }
 .b__cta .b__cta__wraper .b__cta__left {
@@ -683,20 +682,29 @@ form .wpcf7-not-valid-tip {
   line-height: 1.1;
   text-transform: uppercase;
 }
+@media only screen and (max-width: 768px) {
+  .b__cta .b__cta__wraper .b__cta__left .h1 {
+    font-size: 28px;
+  }
+}
 .b__cta .b__cta__wraper .b__cta__right {
   display: flex;
   gap: 20px;
 }
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 768px) {
   .b__cta .b__cta__wraper .b__cta__right {
-    flex-wrap: wrap;
-    justify-content: center;
+    gap: 10px;
   }
 }
 .b__cta .b__cta__wraper .b__cta__right a {
   color: #fff;
   border: 1px solid #fff;
   padding: 20px 65px 20px 30px !important;
+}
+@media only screen and (max-width: 768px) {
+  .b__cta .b__cta__wraper .b__cta__right a {
+    padding: 10px 45px 10px 5px !important;
+  }
 }
 .b__cta .b__cta__wraper .b__cta__right a:hover {
   border: 1px solid transparent;

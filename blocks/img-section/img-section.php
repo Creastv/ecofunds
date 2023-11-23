@@ -19,10 +19,13 @@ if( $link ):
     $link_title = $link['title'];
     $link_target = $link['target'] ? $link['target'] : '_self';
 endif;
-
+$class_name = 'b-img-s';
+if ( ! empty( $block['className'] ) ) {
+    $class_name .= ' ' . $block['className'];
+}
 ?>
 
-<div class="b-img-s">
+<div class="<?php echo esc_attr( $class_name ); ?>">
     <div class="b-img-s__wraper <?php echo $po; ?>">
         <div class="b-img-s__col ">
             <?php if($title) { ?> <<?php echo $tag; ?> class="section-h"> <?php echo $title; ?></<?php echo $tag; ?>><?php } ?>

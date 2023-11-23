@@ -39,8 +39,7 @@ h6,
 }
 @media only screen and (max-width: 768px) {
   .section-h {
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 28px;
   }
 }
 
@@ -93,7 +92,6 @@ a {
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 *,
@@ -107,7 +105,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: #fff;
-  overflow-x: hidden;
 }
 
 #header {
@@ -402,6 +399,11 @@ footer * {
 @media only screen and (max-width: 1300px) {
   .f__contact .f__contact__left {
     order: 2;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .f__contact .f__contact__left {
+    width: 100%;
   }
 }
 .f__contact .f__contact__left p {
@@ -917,6 +919,13 @@ footer * {
     text-align: right;
   }
 }
+@media only screen and (max-width: 768px) {
+  .navbar__navigation > ul {
+    right: initial;
+    left: -105%;
+    text-align: left;
+  }
+}
 .navbar__navigation > ul li a {
   padding: 15px 10px;
   font-weight: normal;
@@ -956,7 +965,7 @@ footer * {
 }
 @media only screen and (max-width: 768px) {
   .navbar__navigation.active > ul {
-    right: -30px !important;
+    left: -30px !important;
     padding-right: 50px;
   }
 }
@@ -2203,6 +2212,7 @@ form .wpcf7-not-valid-tip {
     padding: 0 10px;
     justify-content: center;
     text-align: center;
+    gap: 0px;
   }
 }
 .b__cta .b__cta__wraper .b__cta__left {
@@ -2242,20 +2252,29 @@ form .wpcf7-not-valid-tip {
   line-height: 1.1;
   text-transform: uppercase;
 }
+@media only screen and (max-width: 768px) {
+  .b__cta .b__cta__wraper .b__cta__left .h1 {
+    font-size: 28px;
+  }
+}
 .b__cta .b__cta__wraper .b__cta__right {
   display: flex;
   gap: 20px;
 }
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 768px) {
   .b__cta .b__cta__wraper .b__cta__right {
-    flex-wrap: wrap;
-    justify-content: center;
+    gap: 10px;
   }
 }
 .b__cta .b__cta__wraper .b__cta__right a {
   color: #fff;
   border: 1px solid #fff;
   padding: 20px 65px 20px 30px !important;
+}
+@media only screen and (max-width: 768px) {
+  .b__cta .b__cta__wraper .b__cta__right a {
+    padding: 10px 45px 10px 5px !important;
+  }
 }
 .b__cta .b__cta__wraper .b__cta__right a:hover {
   border: 1px solid transparent;

@@ -348,6 +348,11 @@
       background: $main;
       text-align: right;
     }
+    @media #{$sm} {
+      right: initial;
+      left: -105%;
+      text-align: left;
+    }
     li {
       a {
         padding: 15px 10px;
@@ -393,7 +398,7 @@
     padding-right: 35px;
     border: none;
     @media #{$sm} {
-      right: -30px !important;
+      left: -30px !important;
       padding-right: 50px;
     }
     li {

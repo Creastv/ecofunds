@@ -26,6 +26,7 @@
       padding: 0 10px;
       justify-content: center;
       text-align: center;
+      gap: 0px;
     }
     .b__cta__left {
       flex: auto;
@@ -59,19 +60,26 @@
         font-weight: 700;
         line-height: 1.1;
         text-transform: uppercase;
+        @media #{$sm} {
+          font-size: 28px;
+        }
       }
     }
     .b__cta__right {
       display: flex;
       gap: 20px;
-      @media #{$xs} {
-        flex-wrap: wrap;
-        justify-content: center;
+      @media #{$sm} {
+        // flex-wrap: wrap;
+        // justify-content: center;
+        gap: 10px;
       }
       a {
         color: #fff;
         border: 1px solid #fff;
         padding: 20px 65px 20px 30px !important;
+        @media #{$sm} {
+          padding: 10px 45px 10px 5px !important;
+        }
         &:hover {
           border: 1px solid transparent;
         }

@@ -43,6 +43,9 @@
         background-position: center;
         background-size: cover;
         position: relative;
+        @media #{$sm} {
+          min-height: 150px;
+        }
         &:before {
           content: "";
           position: absolute;

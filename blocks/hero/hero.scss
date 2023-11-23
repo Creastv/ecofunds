@@ -19,9 +19,20 @@
     z-index: 2;
     // max-width: 55%;
     margin: 0 auto;
+    img {
+      @media #{$sm} {
+        width: 150px;
+        height: auto;
+      }
+    }
     h1,
     p {
       color: #fff;
+      @media #{$sm} {
+        br {
+          display: none;
+        }
+      }
     }
     h1 {
       font-size: 51px;
@@ -57,6 +68,7 @@
       margin-top: 50px;
       @media #{$sm} {
         flex-wrap: wrap;
+        gap: 20px;
       }
       p {
         display: block;
@@ -66,6 +78,9 @@
           color: #fff;
           display: block;
           margin-bottom: 15px;
+          @media #{$sm} {
+            font-size: 14px;
+          }
         }
         a {
           color: #fff;
