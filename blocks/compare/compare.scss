@@ -97,6 +97,7 @@
         display: flex;
         width: calc(100% - 60px);
         justify-content: center;
+        margin: 0 auto;
         @media #{$md} {
           position: inherit;
           left: inherit;

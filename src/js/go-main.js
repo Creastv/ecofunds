@@ -7,28 +7,16 @@
     if (navFlag == false) {
       nav.classList.add("active");
       togglerNav.classList.add("active");
-      document.querySelector("body").style.overflow = "hidden";
+      // document.querySelector("body").style.overflow = "hidden";
       navFlag = true;
     } else {
       nav.classList.remove("active");
       togglerNav.classList.remove("active");
-      document.querySelector("body").style.overflow = "inherit";
-      // document.querySelector(".js-header").classList.remove("active");
+      // document.querySelector("body").style.overflow = "inherit";
       navFlag = false;
     }
-    loadItemsNav();
   });
-  function loadItemsNav() {
-    const li = [...document.querySelectorAll(".js-header-nav-list li")];
-    let index = 0;
-    setTimeout(function () {
-      window.setInterval(function () {
-        if (index < li.length) {
-          li[index++].classList.toggle("liVisible");
-        }
-      }, 150);
-    }, 0);
-  }
+
   // Close after click the navmenu on mobile
   const itemsNAv = document.querySelectorAll(".js-navbar__navigation a");
   for (let i = 0; i < itemsNAv.length; i++) {
@@ -56,10 +44,10 @@
     var st = window.pageYOffset || document.documentElement.scrollTop;
     if (window.pageYOffset) {
       navbar.classList.add("active");
-      document.querySelector("#header").style.paddingTop = navbar.clientHeight + "px";
+      // document.querySelector("#header").style.paddingTop = navbar.clientHeight + "px";
     } else {
       navbar.classList.remove("active");
-      document.querySelector("#header").style.paddingTop = "0";
+      // document.querySelector("#header").style.paddingTop = "0";
     }
   });
 

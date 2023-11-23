@@ -3,7 +3,6 @@ body {
   font-weight: 300;
   font-size: 16px;
   color: #252323;
-  overflow-x: hidden !important;
 }
 
 h1,
@@ -94,6 +93,7 @@ a {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 *,
@@ -385,14 +385,12 @@ footer * {
     flex-wrap: wrap;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 998px) {
   .f__contact {
-    justify-content: space-between;
     flex-wrap: wrap;
-    text-align: left;
   }
 }
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 768px) {
   .f__contact {
     justify-content: center;
     text-align: center;
@@ -597,6 +595,7 @@ footer * {
   .f-company .f-company__brand {
     justify-content: center;
     text-align: center;
+    margin-bottom: 50px;
   }
 }
 .f-company .f-company__brand p {
@@ -885,6 +884,11 @@ footer * {
   display: none;
   margin: 0 auto;
 }
+@media only screen and (max-width: 768px) {
+  .navbar__brand #logo--small {
+    margin: inherit;
+  }
+}
 .navbar__brand #logo--large {
   display: block;
 }
@@ -911,11 +915,6 @@ footer * {
     padding-top: 150px;
     background: #ad8641;
     text-align: right;
-  }
-}
-@media only screen and (max-width: 1300px) {
-  .navbar__navigation > ul li {
-    transform: translate(100%, 0);
   }
 }
 .navbar__navigation > ul li a {
@@ -1099,6 +1098,19 @@ footer * {
   width: 80px;
   height: auto;
 }
+@media only screen and (max-width: 1300px) {
+  .page-title .page-title__left svg {
+    width: 60px;
+    height: auto;
+    margin-top: -15px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .page-title .page-title__left svg {
+    width: 50px;
+    margin-top: -13px;
+  }
+}
 .page-title .page-title__left span {
   background-color: #fff;
   position: absolute;
@@ -1164,8 +1176,8 @@ footer * {
 }
 @media only screen and (max-width: 768px) {
   .scroll-down .scroll-down__bg {
-    width: 80px;
-    height: 22px;
+    width: 127px;
+    height: 37px;
   }
 }
 .scroll-down .scroll-down__ani {
@@ -2261,7 +2273,7 @@ form .wpcf7-not-valid-tip {
 }
 
 .home #header {
-  position: absolute;
+  position: fixed;
 }
 
 .b-hero {

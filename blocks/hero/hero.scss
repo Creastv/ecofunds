@@ -55,6 +55,9 @@
       justify-content: center;
       gap: 50px;
       margin-top: 50px;
+      @media #{$sm} {
+        flex-wrap: wrap;
+      }
       p {
         display: block;
       }

@@ -68,6 +68,11 @@
   gap: 50px;
   margin-top: 50px;
 }
+@media only screen and (max-width: 768px) {
+  .b-hero .b-hero__col .b-hero__buttons {
+    flex-wrap: wrap;
+  }
+}
 .b-hero .b-hero__col .b-hero__buttons p {
   display: block;
 }

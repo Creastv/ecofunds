@@ -106,12 +106,10 @@ footer {
   @media #{$lg} {
     flex-wrap: wrap;
   }
-  @media #{$sm} {
-    justify-content: space-between;
+  @media #{$md} {
     flex-wrap: wrap;
-    text-align: left;
   }
-  @media #{$xs} {
+  @media #{$sm} {
     justify-content: center;
     text-align: center;
   }
@@ -310,6 +308,7 @@ footer {
     @media #{$xs} {
       justify-content: center;
       text-align: center;
+      margin-bottom: 50px;
     }
     p {
       margin-bottom: 0;
