@@ -1211,7 +1211,7 @@ footer * {
   z-index: 2;
   display: flex;
   justify-content: center;
-  bottom: 0px;
+  bottom: -2px;
   left: 50%;
   transform: translate(-50%);
 }
