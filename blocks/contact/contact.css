@@ -1,13 +1,26 @@
+.b-contact {
+  margin-bottom: 30px;
+}
 .b-contact .b-contact__wraper {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.b-contact .b-contact__wraper .b-contact__col p {
+.b-contact .b-contact__wraper svg path {
+  fill: #ad8641;
+}
+.b-contact .b-contact__wraper .b-contact__col .desc {
+  margin-bottom: 20px;
+}
+.b-contact .b-contact__wraper .b-contact__col .desc h3 {
+  color: #ad8641;
+  margin-bottom: 0px;
+}
+.b-contact .b-contact__wraper .b-contact__col .desc p {
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 .b-contact .b-contact__wraper .b-contact__col .b-contact-links {
   display: flex;

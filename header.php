@@ -49,7 +49,7 @@
                 </div>
             </div>
         </div>
-        <?php if($dTitle || is_single() || is_tag() || is_category()) { ?>
+        <?php if($dTitle   || is_singular('post')  || is_tag() || is_category() || is_tax()) { ?>
         <div>
             <div class="container-fluid">
                 <div class="row">

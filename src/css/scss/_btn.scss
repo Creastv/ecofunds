@@ -34,8 +34,32 @@
   padding: 10px 25px;
   border: 1px solid $main;
   text-decoration: none;
+  transition: all 0.3s linear;
+  background: transparent;
+  text-align: center;
+  display: flex;
+  align-items: center;
+
+  svg {
+    opacity: 0;
+
+    margin-right: 25px;
+    transition: all 0.2s linear;
+  }
+  &:active {
+    box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.1);
+    svg {
+      transform: translate(10px, 0);
+    }
+  }
   &:hover {
+    transition: all 0.3s linear;
     color: #fff;
-    background-color: $main;
+    background: rgb(228, 199, 95);
+    background: linear-gradient(221deg, rgba(228, 199, 95, 1) 0%, rgba(173, 134, 65, 1) 100%);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.51);
+    svg {
+      opacity: 1;
+    }
   }
 }

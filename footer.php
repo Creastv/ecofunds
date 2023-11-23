@@ -2,8 +2,6 @@
 </div>
 </main>
 <?php get_template_part('templates-parts/parts/posts'); ?>
-<?php get_template_part('templates-parts/parts/form'); ?>
-<?php get_template_part('templates-parts/footer/footer', 'get-know'); ?>
 <?php get_template_part('templates-parts/footer/footer', 'cta'); ?>
 
 <footer id="footer" itemscope itemtype="http://schema.org/WPFooter">
@@ -11,6 +9,9 @@
         <div class="row">
             <hr>
             <div class="f__main__wraper ">
+                 <div class="col">
+                    <?php get_template_part('templates-parts/footer/footer', 'company'); ?>
+                </div>
                 <div class="col">
                     <?php get_template_part('templates-parts/footer/footer', 'main'); ?>
                 </div>
@@ -33,6 +34,15 @@
     </svg>
 </span>
 <?php wp_footer(); ?>
+<script>
+    (function ($) {
+        "use strict";
+        $(document).ready(function () {
+            $('#user_login').attr('placeholder', 'login');
+            $('#user_pass').attr('placeholder', 'Hasło');
+        });
+    })(jQuery);
+</script>
 </body>
 
 </html>

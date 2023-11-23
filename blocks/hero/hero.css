@@ -7,7 +7,7 @@
   margin-left: -50vw;
   left: 50%;
   position: relative;
-  padding: 200px 0;
+  padding: 160px 0 100px 0;
   background-size: cover;
   background-position: center;
 }
@@ -65,47 +65,31 @@
 .b-hero .b-hero__col .b-hero__buttons {
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 50px;
-  margin-top: 30px;
+  margin-top: 50px;
 }
-@media only screen and (max-width: 768px) {
-  .b-hero .b-hero__col .b-hero__buttons {
-    flex-wrap: wrap;
-    gap: 20px;
-  }
+.b-hero .b-hero__col .b-hero__buttons p {
+  display: block;
 }
-.b-hero .b-hero__col .b-hero__buttons a {
-  font-size: 18px;
-  padding: 15px 15px;
-  text-align: left;
-  max-width: 400px;
-  display: flex;
-  justify-content: flex-start;
+.b-hero .b-hero__col .b-hero__buttons .single-btn > span {
+  color: #fff;
+  display: block;
+  margin-bottom: 15px;
 }
-@media only screen and (max-width: 998px) {
-  .b-hero .b-hero__col .b-hero__buttons a {
-    font-size: 16px;
-    max-width: initial;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .b-hero .b-hero__col .b-hero__buttons a {
-    padding: 20px;
-  }
-}
-.b-hero .b-hero__col .b-hero__buttons a svg {
-  width: 50px;
-  height: 20px;
-}
-.b-hero .b-hero__col .b-hero__buttons .btn-revers {
+.b-hero .b-hero__col .b-hero__buttons .single-btn a {
   color: #fff;
   border: 1px solid #fff;
-  padding: 15px 100px;
-  text-align: center;
-  opacity: 0.8;
+  padding: 10px 55px 10px 20px !important;
+  max-width: 260px;
+  min-height: 62px;
 }
-.b-hero .b-hero__col .b-hero__buttons .btn-revers:hover {
-  border-color: #ad8641;
-  opacity: 1;
+.b-hero .b-hero__col .b-hero__buttons .single-btn a:hover {
+  border: 1px solid transparent;
+}
+.b-hero .b-hero__col .b-hero__buttons .single-btn a svg {
+  width: 19px;
+  display: block;
+}
+.b-hero .b-hero__col .b-hero__buttons .single-btn a span {
+  width: calc(100% - 20px);
 }/*# sourceMappingURL=hero.css.map */

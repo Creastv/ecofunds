@@ -1,6 +1,23 @@
 <?php
 function register_acf_block_types() {
   //Done
+  acf_register_block_type(array(
+        'name'              => 'person',
+        'title'             => __('Person'),
+        'render_template'   => 'blocks/person/person.php',
+        'category'          => 'formatting',
+        'icon' => array(
+          'background' => '#5f031f',
+          'foreground' => '#fff',
+          'src' => 'ellipsis',
+        ),
+      'mode'            => 'preview', 
+      'keywords'          => array( 'person' ),
+      'supports' => array( 'align' =>false ),
+      'enqueue_assets'    => function(){
+          wp_enqueue_style( 'go-person',  get_template_directory_uri() . '/blocks/person/person.min.css' );
+      },
+    ));
     acf_register_block_type(array(
         'name'              => 'accordions',
         'title'             => __('Accordions'),
@@ -48,6 +65,9 @@ function register_acf_block_types() {
       'mode'            => 'preview', 
       'keywords'          => array( 'Get to know' ),
       'supports' => array( 'align' =>false ),
+      'enqueue_assets'    => function(){
+          wp_enqueue_style( 'go-get-know',  get_template_directory_uri() . '/blocks/get-know/get-know.min.css' );
+      },
      
     ));
     // acf_register_block_type(array(
@@ -121,7 +141,7 @@ function register_acf_block_types() {
      acf_register_block_type(array(
       'name'              => 'form-contact',
       'title'             => __('Form contact'),
-      'render_template'   => 'blocks/form/form-contact.php',
+      'render_template'   => 'blocks/form/form.php',
       'category'          => 'formatting',
       'icon' => array(
           'background' => '#5f031f',
@@ -191,6 +211,24 @@ function register_acf_block_types() {
     ));
 
      acf_register_block_type(array(
+      'name'              => 'sticky-content',
+      'title'             => __('Sticky gallery'),
+      'render_template'   => 'blocks/sticky-content/sticky-content.php',
+      'category'          => 'formatting',
+      'icon' => array(
+          'background' => '#5f031f',
+          'foreground' => '#fff',
+          'src' => 'ellipsis',
+      ),
+      'mode'            => 'preview', 
+      'keywords'          => array( 'sticky-content' ),
+      'supports' => array( 'align' =>false ),
+      'enqueue_assets'    => function(){
+            wp_enqueue_style( 'go-sticky-content',  get_template_directory_uri() . '/blocks/sticky-content/sticky-content.min.css', array(), '1.1' );
+      },
+    ));
+
+     acf_register_block_type(array(
       'name'              => 'hero',
       'title'             => __('Hero secion'),
       'render_template'   => 'blocks/hero/hero.php',
@@ -224,7 +262,9 @@ function register_acf_block_types() {
       'supports' => array( 'align' =>false ),
       
       'enqueue_assets'    => function(){
-            wp_enqueue_style( 'go-circle-tabs',  get_template_directory_uri() . '/blocks/circle-tabs/circle-tabs.min.css' );
+          wp_enqueue_style( 'go-circle-tabs',  get_template_directory_uri() . '/blocks/circle-tabs/circle-tabs.min.css' );
+           wp_enqueue_script('go-circle-js', get_template_directory_uri() .'/blocks/circle-tabs/auto-tabs.js',  array(), '20130456', true );
+          wp_enqueue_script('go-circle-init', get_template_directory_uri() .'/blocks/circle-tabs/index.js',  array(), '20130456', true );
       },
     ));
 

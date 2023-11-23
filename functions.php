@@ -60,7 +60,7 @@ function filter_plugin_updates( $value ) {
 function ka_override_MCE_options($init)
   {
     $custom_colors = '
-          "5f031f", "Main color",
+          "ad8641", "Main color",
           "061322", "Black",
           "252323", "Light black",
           "f4f4f4", "Gray",
@@ -86,8 +86,8 @@ add_filter('excerpt_more', 'new_excerpt_more');
 
 if( function_exists('acf_add_options_page') ) {
   acf_add_options_page(array(
-    'page_title' => 'Moovin settings',
-    'menu_title' => 'Moovin settings',
+    'page_title' => 'Eco Funds settings',
+    'menu_title' => 'Eco Funds settings',
     'parent_slug' => 'themes.php',
   ));
   acf_add_options_page(array(
@@ -96,3 +96,50 @@ if( function_exists('acf_add_options_page') ) {
     'parent_slug' => 'themes.php',
   ));
 }
+
+
+
+
+function custom_redirect() {        
+    global $post;
+   $term = get_queried_object(); 
+   $projects = get_terms( 'cat-projects', 'orderby=count' );
+
+    if ( $post->post_type == 'projects' && $term->taxonomy == 'cat-projects' && ! is_user_logged_in() ) {
+      wp_redirect( home_url() ); 
+      exit();
+    }    
+  }
+
+  add_action("template_redirect","custom_redirect");
+
+
+  add_role('projekty', 'Projekty', array(
+  'read' => true,
+  'create_posts' => false,
+  'edit_posts' => false,
+  'edit_others_posts' => false,
+  'publish_posts' => false,
+  'manage_categories' => false,
+  ));
+
+
+function is_post_type($type){
+    global $wp_query;
+    if($type == get_post_type($wp_query->post->ID)) 
+        return true;
+    return false;
+}
+
+
+function add_login_check()
+{
+    if (is_user_logged_in()) {
+        if (is_page(3839)){
+            wp_redirect('http://localhost/ecofund/porfel-inwestycyjny/');
+            exit; 
+        }
+    }
+}
+
+add_action('wp', 'add_login_check');

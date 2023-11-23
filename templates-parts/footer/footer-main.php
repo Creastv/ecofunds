@@ -1,7 +1,7 @@
 <?php 
 $maenuOne = get_field('menus', 'options');
 $menuTwo = get_field('menus_two', 'options');
-$menuThree = get_field('menus_three', 'options');
+
 ?>
 
 <div class="f__menus">
@@ -27,17 +27,5 @@ $menuThree = get_field('menus_three', 'options');
             <?php echo $menuTwo['menu']; ?>
         </div>
         <?php } ?>
-
-        <?php if($menuThree) { ?>
-        <div class="f__menus__col">
-            <?php if($menuThree['title']) { ?>
-            <p><?php echo $menuThree['title']; ?></p>
-            <?php } else { ?>
-            <span class="space"></span>
-            <?php } ?>
-            <?php echo $menuThree['menu']; ?>
-        </div>
-        <?php } ?>
-
     </div>
 </div>

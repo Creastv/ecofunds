@@ -77,9 +77,11 @@
           h3 {
             font-size: 27px;
             color: $main;
+            padding: 25px 0;
           }
         }
         ul {
+          margin-bottom: 0px;
           li {
             margin-bottom: 0px;
             padding-bottom: 10px;
@@ -94,6 +96,7 @@
         transform: translate(-50%, 0);
         display: flex;
         width: calc(100% - 60px);
+        justify-content: center;
         @media #{$md} {
           position: inherit;
           left: inherit;

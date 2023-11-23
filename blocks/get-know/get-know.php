@@ -14,6 +14,8 @@ if( $link ){
 $pos = "";
 if($imgPosition) {
     $pos = "left";
+} else {
+    $pos = "right";
 }
 ?>
 <div class="b__gtk">
@@ -44,7 +46,9 @@ if($imgPosition) {
             <?php } ?>
         </div>
         <div class="b__gtk__col">
-            <?php echo wp_get_attachment_image( $img, 'full'); ?>
+            <div class="img">
+                <?php echo wp_get_attachment_image( $img, 'full'); ?>
+            </div>
         </div>
     </div>
 

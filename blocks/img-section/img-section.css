@@ -1,3 +1,6 @@
+.b-img-s {
+  margin-bottom: 30px;
+}
 @media only screen and (max-width: 998px) {
   .b-img-s .right {
     flex-wrap: wrap;
@@ -6,8 +9,8 @@
 .b-img-s .right .b-img-s__col:nth-child(1) {
   width: 50% !important;
   order: 2;
-  padding: 50px 0px 50px 50px !important;
-  width: 56%;
+  padding: 50px !important;
+  width: 50%;
 }
 @media only screen and (max-width: 998px) {
   .b-img-s .right .b-img-s__col:nth-child(1) {
@@ -16,12 +19,12 @@
 }
 @media only screen and (max-width: 1400px) {
   .b-img-s .right .b-img-s__col:nth-child(1) {
-    padding: 50px 0px 50px 50px !important;
+    padding: 50px !important;
   }
 }
 @media only screen and (max-width: 1300px) {
   .b-img-s .right .b-img-s__col:nth-child(1) {
-    padding: 50px 0px 50px 50px !important;
+    padding: 50px !important;
   }
 }
 @media only screen and (max-width: 998px) {
@@ -38,7 +41,7 @@
   }
 }
 .b-img-s .right .b-img-s__col:nth-child(2) {
-  width: 56% !important;
+  width: 50% !important;
 }
 @media only screen and (max-width: 998px) {
   .b-img-s .right .b-img-s__col:nth-child(2) {
@@ -78,8 +81,8 @@
 }
 .b-img-s .b-img-s__wraper .b-img-s__col:nth-child(1) {
   align-self: center;
-  padding: 50px 50px 50px 0;
-  width: 56%;
+  padding: 50px;
+  width: 50%;
 }
 @media only screen and (max-width: 1400px) {
   .b-img-s .b-img-s__wraper .b-img-s__col:nth-child(1) {
@@ -88,7 +91,7 @@
 }
 @media only screen and (max-width: 1300px) {
   .b-img-s .b-img-s__wraper .b-img-s__col:nth-child(1) {
-    padding: 50px 50px 50px 50px;
+    padding: 50px;
   }
 }
 @media only screen and (max-width: 998px) {
@@ -153,6 +156,17 @@
     height: initial;
     min-height: initial;
   }
+}
+.b-img-s .galery .img:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(40deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.1) 100%);
 }
 .b-img-s .galery .img img {
   width: 100%;
@@ -245,4 +259,21 @@
 .b-img-s .list .list__item p {
   margin: 0;
   padding: 0;
+}
+.b-img-s .desc {
+  padding-left: 50px;
+  position: relative;
+  padding: 30px 30px 20px 50px;
+}
+.b-img-s .desc:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 1px;
+  height: 100%;
+  background-color: #ad8641;
+}
+.b-img-s .btn_wrap {
+  padding: 30px 20px;
 }/*# sourceMappingURL=img-section.css.map */

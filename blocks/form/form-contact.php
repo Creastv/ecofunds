@@ -17,9 +17,7 @@ $form = get_field( 'form' );
             <?php if ($bottom) { ?>
             <?php echo $bottom; ?>
             <?php } ?>
-            <?php if ($form) { ?>
-            <?php echo $form; ?>
-            <?php } ?>
+             <?php echo do_shortcode('[contact-form-7 id="1ea992e" title="Formularz kontaktowy"]');?>
         </div>
     </div>
 </div>

@@ -20,7 +20,7 @@
   display: flex;
 }
 .group-container .group-container__wraper .group-container__left {
-  padding: 20px 33px;
+  padding: 9px;
   position: relative;
 }
 @media only screen and (max-width: 768px) {
@@ -44,11 +44,16 @@
   }
 }
 .group-container .group-container__wraper .group-container__right {
-  padding-right: 66px;
+  padding-right: 100px;
+  padding-left: 20px;
   width: 100%;
 }
 @media only screen and (max-width: 768px) {
   .group-container .group-container__wraper .group-container__right {
     padding-right: 0px;
   }
+}
+.group-container .no-left {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
 }/*# sourceMappingURL=container.css.map */

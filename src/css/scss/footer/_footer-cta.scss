@@ -2,7 +2,7 @@
   padding: 50px 0;
   background-color: $main;
   background-position: center;
-  background-attachment: fixed;
+  // background-attachment: fixed;
   position: relative;
 
   @media #{$sm} {
@@ -20,9 +20,12 @@
     display: flex;
     gap: 20px;
     justify-content: space-between;
+    align-items: center;
     @media #{$sm} {
       flex-wrap: wrap;
       padding: 0 10px;
+      justify-content: center;
+      text-align: center;
     }
     .b__cta__left {
       flex: auto;
@@ -31,6 +34,7 @@
         line-height: 34px;
         margin: 0;
         padding: 0;
+        margin-bottom: 10px;
         font-weight: 500;
         color: #fff;
         @media #{$lg} {
@@ -50,10 +54,27 @@
           }
         }
       }
+      .h1 {
+        font-size: 41px;
+        font-weight: 700;
+        line-height: 1.1;
+        text-transform: uppercase;
+      }
     }
     .b__cta__right {
-      .btn {
-        min-width: 300px;
+      display: flex;
+      gap: 20px;
+      @media #{$xs} {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      a {
+        color: #fff;
+        border: 1px solid #fff;
+        padding: 20px 65px 20px 30px !important;
+        &:hover {
+          border: 1px solid transparent;
+        }
       }
     }
   }
@@ -67,4 +88,8 @@
   margin-left: -50vw !important;
   left: 50% !important;
   position: relative !important;
+}
+
+.b__cta--fixed {
+  background-attachment: fixed;
 }

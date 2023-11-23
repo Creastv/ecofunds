@@ -21,12 +21,13 @@
   .group-container__wraper {
     display: flex;
     .group-container__left {
-      padding: 20px 33px;
+      padding: 9px;
       position: relative;
       @media #{$sm} {
         display: none;
       }
       svg {
+        // width: 100px;
       }
       span {
         background-color: $main;
@@ -45,11 +46,16 @@
       }
     }
     .group-container__right {
-      padding-right: 66px;
+      padding-right: 100px;
+      padding-left: 20px;
       width: 100%;
       @media #{$sm} {
         padding-right: 0px;
       }
     }
+  }
+  .no-left {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
   }
 }

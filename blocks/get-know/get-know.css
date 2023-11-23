@@ -1,0 +1,94 @@
+.b__gtk {
+  margin-bottom: 50px;
+}
+@media only screen and (max-width: 998px) {
+  .b__gtk {
+    margin-bottom: 0px;
+  }
+}
+.b__gtk .b__gtk__wraper {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+}
+@media only screen and (max-width: 998px) {
+  .b__gtk .b__gtk__wraper {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+}
+@media only screen and (max-width: 998px) {
+  .b__gtk .b__gtk__wraper .b__gtk__col {
+    width: 100%;
+  }
+}
+.b__gtk .b__gtk__wraper .b__gtk__col:nth-child(1) {
+  width: 50%;
+}
+@media only screen and (max-width: 998px) {
+  .b__gtk .b__gtk__wraper .b__gtk__col:nth-child(1) {
+    width: 100%;
+    order: 2 !important;
+  }
+}
+.b__gtk .b__gtk__wraper .b__gtk__col:nth-child(2) {
+  width: 50%;
+}
+@media only screen and (max-width: 998px) {
+  .b__gtk .b__gtk__wraper .b__gtk__col:nth-child(2) {
+    width: 100%;
+    order: 1 !important;
+  }
+}
+.b__gtk .b__gtk__wraper .b__gtk__col p {
+  font-size: 18px;
+}
+@media only screen and (max-width: 998px) {
+  .b__gtk .b__gtk__wraper .b__gtk__col p {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+}
+.b__gtk .b__gtk__wraper .b__gtk__col .img {
+  align-self: stretch;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  min-height: 400px;
+  height: 100%;
+}
+.b__gtk .b__gtk__wraper .b__gtk__col .img:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  background: linear-gradient(40deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.1) 100%);
+}
+.b__gtk .b__gtk__wraper .b__gtk__col .img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media only screen and (max-width: 998px) {
+  .b__gtk .b__gtk__wraper .b__gtk__col .img img {
+    margin-bottom: 20px;
+  }
+}
+.b__gtk .b__gtk__wraper .b__gtk__col.left {
+  order: 1;
+  padding: 50px;
+}
+.b__gtk .b__gtk__wraper .b__gtk__col.right {
+  padding: 50px;
+}/*# sourceMappingURL=get-know.css.map */

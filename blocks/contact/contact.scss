@@ -1,18 +1,31 @@
 @import "../../src/css/scss/variable";
 .b-contact {
+  margin-bottom: 30px;
   .b-contact__wraper {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     flex-wrap: wrap;
-
-    .b-contact__col {
-      p {
-        margin: 0;
-        padding: 0;
-        margin-bottom: 20px;
+    svg {
+      path {
+        fill: $main;
       }
+    }
+    .b-contact__col {
+      .desc {
+        margin-bottom: 20px;
+        h3 {
+          color: $main;
+          margin-bottom: 0px;
+        }
+        p {
+          margin: 0;
+          padding: 0;
+          margin-bottom: 0px;
+        }
+      }
+
       .b-contact-links {
         display: flex;
         flex-wrap: wrap;

@@ -31,11 +31,11 @@ h6,
   }
 }
 .section-h {
-  font-size: 34px;
-  line-height: 40px;
+  font-size: 41px;
+  // line-height: 40px;
   @media #{$lg} {
-    font-size: 26px;
-    line-height: 32px;
+    // font-size: 26px;
+    // line-height: 32px;
   }
   @media #{$sm} {
     font-size: 24px;

@@ -8,7 +8,6 @@
 @import "scss/form";
 
 @import "scss/footer/footer-cta";
-@import "scss/footer/footer-get-know";
 
 .wp-block-spacer {
   background: rgba(0, 0, 0, 0.1) !important;
@@ -21,11 +20,20 @@
   }
 }
 .wp-block {
-  max-width: 90%;
+  max-width: 100%;
   margin-top: 28px;
   margin-bottom: 28px;
 }
 
 .text-center {
   text-align: center;
+}
+
+.acf-block-preview {
+  .group-container {
+    .row {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 }

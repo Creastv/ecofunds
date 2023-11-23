@@ -91,6 +91,10 @@
 .b-compare .packs .top .pack-item__wraper .pack-item__header h3 {
   font-size: 27px;
   color: #ad8641;
+  padding: 25px 0;
+}
+.b-compare .packs .top .pack-item__wraper ul {
+  margin-bottom: 0px;
 }
 .b-compare .packs .top .pack-item__wraper ul li {
   margin-bottom: 0px;
@@ -104,6 +108,7 @@
   transform: translate(-50%, 0);
   display: flex;
   width: calc(100% - 60px);
+  justify-content: center;
 }
 @media only screen and (max-width: 998px) {
   .b-compare .packs .top .btn {
