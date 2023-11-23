@@ -67,6 +67,11 @@
     margin-bottom: 30px;
   }
 }
+@media only screen and (max-width: 768px) {
+  .b-sticky-gsallery .b-sticky-gsallery__wraper {
+    margin-bottom: 0;
+  }
+}
 .b-sticky-gsallery .b-sticky-gsallery__wraper .galery li {
   padding-bottom: 20px;
 }
@@ -115,6 +120,12 @@
   height: 600px;
   position: sticky;
   top: 100px;
+}
+@media only screen and (max-width: 998px) {
+  .b-sticky-gsallery .galery {
+    position: relative !important;
+    top: initial;
+  }
 }
 .b-sticky-gsallery .galery .img {
   align-self: stretch;

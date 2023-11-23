@@ -39,6 +39,9 @@ h6,
   @media #{$sm} {
     font-size: 28px;
     // line-height: 30px;
+    br {
+      display: none;
+    }
   }
 }
 .subhead-h {

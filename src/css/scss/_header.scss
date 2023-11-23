@@ -54,6 +54,10 @@
           font-weight: 500;
           &:hover {
             color: $main;
+            @media #{$lg} {
+              opacity: 0.5;
+              color: #fff;
+            }
           }
         }
       }
@@ -126,6 +130,7 @@
                 @media #{$lg} {
                   padding: initial;
                   font-size: 21px !important;
+                  margin-bottom: 20px;
                 }
                 &:after {
                   display: none !important;
@@ -197,6 +202,9 @@
     .navbar__toggler__btn {
       span {
         background-color: $black;
+        @media #{$sm} {
+          background-color: $black !important;
+        }
       }
     }
   }
@@ -209,6 +217,10 @@
         &:hover {
           span {
             color: $main !important;
+            @media #{$lg} {
+              opacity: 0.5;
+              color: #fff !important;
+            }
           }
         }
       }
@@ -315,16 +327,23 @@
   }
   .site-title {
     width: 150px;
+    @media #{$sm} {
+      width: 120px;
+    }
   }
   #logo--small {
     display: none;
     margin: 0 auto;
     @media #{$sm} {
       margin: inherit;
+      height: 50px;
     }
   }
   #logo--large {
     display: block;
+    @media #{$sm} {
+      padding: 15px 0;
+    }
   }
 }
 // Menu

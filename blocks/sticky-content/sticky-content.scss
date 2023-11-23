@@ -2,6 +2,7 @@
 
 .b-sticky-gsallery {
   margin-bottom: 30px;
+
   .right {
     @media #{$md} {
       flex-wrap: wrap;
@@ -65,6 +66,9 @@
       flex-wrap: wrap;
       margin-bottom: 30px;
     }
+    @media #{$sm} {
+      margin-bottom: 0;
+    }
     .galery {
       li {
         padding-bottom: 20px;
@@ -109,6 +113,10 @@
     position: -webkit-sticky;
     position: sticky;
     top: 100px;
+    @media #{$md} {
+      position: relative !important;
+      top: initial;
+    }
     .img {
       align-self: stretch;
       overflow: hidden;
