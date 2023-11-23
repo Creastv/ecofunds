@@ -645,9 +645,9 @@ footer * {
   position: relative;
   z-index: 99;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 10px 0;
+  gap: 30px;
 }
 @media only screen and (max-width: 1300px) {
   #header .navbar {
@@ -927,6 +927,9 @@ footer * {
   }
 }
 
+.navbar__navigation {
+  flex: auto;
+}
 @media only screen and (max-width: 1300px) {
   .navbar__navigation {
     flex: none;
@@ -934,6 +937,7 @@ footer * {
   }
 }
 .navbar__navigation > ul {
+  justify-content: center;
   position: relative;
   padding: 20px 0 20px 20px;
 }
@@ -1023,10 +1027,15 @@ footer * {
 }
 @media only screen and (max-width: 1300px) {
   .navbar__toggler {
-    margin-left: 50px;
+    margin-left: 20px;
     display: flex;
     position: relative;
     z-index: 99;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .navbar__toggler {
+    margin-left: 10px;
   }
 }
 .navbar__toggler > span {
