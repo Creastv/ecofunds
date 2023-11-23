@@ -136,7 +136,7 @@ function add_login_check()
 {
     if (is_user_logged_in()) {
         if (is_page(3839)){
-            wp_redirect('http://localhost/ecofund/porfel-inwestycyjny/');
+            wp_redirect('https://ecofunds.roial.pl/porfel-inwestycyjny/');
             exit; 
         }
     }
