@@ -177,6 +177,15 @@ body {
   background-color: rgba(0, 0, 0, 0.57);
 }
 
+.swicher-desctop {
+  display: block;
+}
+@media only screen and (max-width: 768px) {
+  .swicher-desctop {
+    display: none;
+  }
+}
+
 .posts-wraper {
   display: flex;
   flex-wrap: wrap;

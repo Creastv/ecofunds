@@ -271,6 +271,15 @@ body {
   background-color: rgba(0, 0, 0, 0.57);
 }
 
+.swicher-desctop {
+  display: block;
+}
+@media only screen and (max-width: 768px) {
+  .swicher-desctop {
+    display: none;
+  }
+}
+
 footer {
   position: relative;
   background-color: #000;

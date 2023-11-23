@@ -15,6 +15,7 @@
 			$link_title = $link['title'];
 			$link_target = $link['target'] ? $link['target'] : '_self';
 		}
+
 		if($contact['phone_no']){
 		$phoneMobile = '<li class="phone-mobile"> <a href="tel:' . $contact['phone_no'] . '" >
 		  <svg xmlns="http://www.w3.org/2000/svg" width="21.999" height="21.999" viewBox="0 0 21.999 21.999">
@@ -27,7 +28,9 @@
 			
 			<span>' . esc_html( $link_title ) . '</span>
 			</a></li>';
-    }
+			
+		 }
+
     endif;
     $temp_menu = wp_nav_menu(array(
     'theme_location' => $navLocation,
@@ -35,7 +38,7 @@
     'menu_class' => 'header-nav-list',
     'container' => false,
     'echo' => false,
-    'items_wrap' => '<ul id="%1$s" class="%2$s js-header-nav-list " itemscope itemtype="https://www.schema.org/SiteNavigationElement">%3$s ' . $phoneMobile . ' ' . $linkMobile . '</ul>',
+    'items_wrap' => '<ul id="%1$s" class="%2$s js-header-nav-list " itemscope itemtype="https://www.schema.org/SiteNavigationElement">%3$s ' . $phoneMobile . ' ' . $linkMobile . ' ' .$swicher. '</ul>',
     ));
    $temp_menu = str_replace("<a", "<a itemprop='url' ", $temp_menu); // We set an attribute for menu items through replacement
 

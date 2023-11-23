@@ -178,3 +178,10 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.57);
 }
+
+.swicher-desctop {
+  display: block;
+  @media #{$sm} {
+    display: none;
+  }
+}
