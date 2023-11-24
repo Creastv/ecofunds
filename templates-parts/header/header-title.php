@@ -31,8 +31,8 @@ $term = get_queried_object();
 					single_cat_title();					
 					elseif (is_404()) :
 						_e( '404', 'go');
-					elseif (is_post_type('mieszkania') ) :
-						_e( 'Realizacje', 'go');
+					elseif (is_post_type('projects') ) :
+						_e( 'Porfel inwestycyjny', 'go');
 					elseif (is_page() ) :
 						the_title();
 					elseif (is_single() ) :

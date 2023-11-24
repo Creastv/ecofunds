@@ -19,6 +19,7 @@ require_once get_template_directory() . '/func/enqueue-styles.php';
 require_once get_template_directory() . '/func/enqueue-scripts.php';
 require get_template_directory() . '/func/clean-up.php';
 require get_template_directory() . '/func/cpt.php';
+require get_template_directory() . '/func/login-form.php';
 
 
 // gutenberg editor
@@ -132,15 +133,3 @@ function is_post_type($type){
 }
 
 
-function add_login_check()
-{
-    if (is_user_logged_in()) {
-        if (is_page(3839)){
-            wp_redirect('http://localhost/ecofund/porfel-inwestycyjny/');
-            //  wp_redirect('https://ecofunds.roial.pl/porfel-inwestycyjny/');
-            exit; 
-        }
-    }
-}
-
-add_action('wp', 'add_login_check');
