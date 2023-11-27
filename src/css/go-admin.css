@@ -14,6 +14,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #fff;
+  overflow-x: hidden;
 }
 
 #header {
@@ -422,30 +423,35 @@ body {
   opacity: 1;
 }
 
-form.wpcf7-form .form-wraper {
+form.wpcf7-form .form-wraper,
+.o-system-form .form-wraper {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
   position: relative;
 }
 @media only screen and (max-width: 768px) {
-  form.wpcf7-form .form-wraper .btn {
+  form.wpcf7-form .form-wraper .btn,
+  .o-system-form .form-wraper .btn {
     display: block;
     width: 100%;
     padding: 10px 20px;
   }
 }
-form.wpcf7-form .control-wrap {
+form.wpcf7-form .control-wrap,
+.o-system-form .control-wrap {
   display: flex;
   gap: 15px;
 }
 @media only screen and (max-width: 768px) {
-  form.wpcf7-form .control-wrap {
+  form.wpcf7-form .control-wrap,
+  .o-system-form .control-wrap {
     flex-wrap: wrap;
     gap: 0px;
   }
 }
-form.wpcf7-form .form-group {
+form.wpcf7-form .form-group,
+.o-system-form .form-group {
   position: relative;
   display: flex;
   align-items: center;
@@ -453,39 +459,48 @@ form.wpcf7-form .form-group {
   gap: 10px;
 }
 @media only screen and (max-width: 768px) {
-  form.wpcf7-form .form-group {
+  form.wpcf7-form .form-group,
+  .o-system-form .form-group {
     flex-wrap: wrap;
     gap: 10px;
   }
 }
-form.wpcf7-form .form-group .wpcf7-form-control-wrap {
+form.wpcf7-form .form-group .wpcf7-form-control-wrap,
+.o-system-form .form-group .wpcf7-form-control-wrap {
   width: 100%;
   padding-right: 15px;
   padding-bottom: 15px;
 }
-form.wpcf7-form .form-group .form-control:focus {
+form.wpcf7-form .form-group .form-control:focus,
+.o-system-form .form-group .form-control:focus {
   box-shadow: 0 0 0px 2px rgba(173, 134, 65, 0.51);
   border: 1px solid #ad8641;
 }
-form.wpcf7-form .col-1 {
+form.wpcf7-form .col-1,
+.o-system-form .col-1 {
   width: 100%;
 }
-form.wpcf7-form .col-2 {
+form.wpcf7-form .col-2,
+.o-system-form .col-2 {
   width: 50%;
 }
 @media only screen and (max-width: 768px) {
-  form.wpcf7-form .col-2 {
+  form.wpcf7-form .col-2,
+  .o-system-form .col-2 {
     width: 100%;
   }
 }
-form.wpcf7-form .ch span {
+form.wpcf7-form .ch span,
+.o-system-form .ch span {
   font-size: 12px;
   margin-bottom: 10px;
 }
-form.wpcf7-form label {
+form.wpcf7-form label,
+.o-system-form label {
   width: 100%;
 }
-form.wpcf7-form input {
+form.wpcf7-form input,
+.o-system-form input {
   min-height: 55px;
   background-color: #f4f4f4;
   border: none;
@@ -493,18 +508,21 @@ form.wpcf7-form input {
   width: 100%;
   outline: 0;
 }
-form.wpcf7-form textarea {
+form.wpcf7-form textarea,
+.o-system-form textarea {
   min-height: 55px;
   background-color: #f4f4f4;
   border: none;
   padding: 10px;
   width: 100%;
 }
-form.wpcf7-form .ch input {
+form.wpcf7-form .ch input,
+.o-system-form .ch input {
   width: 20px;
   min-height: initial;
 }
-form.wpcf7-form .wpcf7-not-valid-tip {
+form.wpcf7-form .wpcf7-not-valid-tip,
+.o-system-form .wpcf7-not-valid-tip {
   color: #dc3232;
   font-size: 0.7em;
   font-weight: normal;

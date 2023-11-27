@@ -104,7 +104,7 @@
         }
         .sub-menu {
           position: absolute;
-          background-color: #fff;
+          background-color: rgba(0, 0, 0, 0.5);
           box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.09);
           display: block;
           padding: 10px;
@@ -125,7 +125,7 @@
               display: block;
               padding: 0px 5px;
               font-size: 14px !important;
-              color: #1a070d;
+              color: #fff;
 
               span {
                 font-size: 16px;
@@ -194,6 +194,14 @@
       rect {
         transition: all 0.3s linear;
         // fill: #000;
+      }
+    }
+  }
+  .sub-menu {
+    background-color: #fff !important;
+    li {
+      a {
+        color: $black;
       }
     }
   }
@@ -438,6 +446,14 @@
   }
   .sub-menu {
     box-shadow: none;
+  }
+  .sub-menu {
+    background: none !important;
+    li {
+      a {
+        color: $black;
+      }
+    }
   }
 }
 

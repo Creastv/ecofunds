@@ -108,6 +108,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #fff;
+  overflow-x: hidden;
 }
 
 #header {
@@ -331,30 +332,23 @@ footer * {
 }
 
 .f__main__wraper {
-  padding: 50px 20px 20px;
+  padding: 0;
   display: flex;
   justify-content: space-between;
   gap: 50px;
 }
-@media only screen and (max-width: 1300px) {
-  .f__main__wraper {
-    align-items: center;
-  }
-}
 @media only screen and (max-width: 998px) {
   .f__main__wraper {
     gap: 0px;
+    flex-wrap: wrap;
   }
 }
 @media only screen and (max-width: 768px) {
   .f__main__wraper {
     flex-wrap: wrap;
-    padding: 20px 15px;
+    padding: 20px 0px;
     gap: 20px;
   }
-}
-.f__main__wraper .col:nth-child(1) {
-  width: 30%;
 }
 @media only screen and (max-width: 768px) {
   .f__main__wraper .col:nth-child(1) {
@@ -362,17 +356,11 @@ footer * {
     order: 1;
   }
 }
-.f__main__wraper .col:nth-child(2) {
-  width: 40%;
-}
 @media only screen and (max-width: 768px) {
   .f__main__wraper .col:nth-child(2) {
     width: 100%;
     order: 2;
   }
-}
-.f__main__wraper .col:nth-child(3) {
-  width: 30%;
 }
 @media only screen and (max-width: 768px) {
   .f__main__wraper .col:nth-child(3) {
@@ -389,11 +377,6 @@ footer * {
   gap: 30px;
   margin-bottom: 30px;
 }
-@media only screen and (max-width: 1300px) {
-  .f__contact {
-    flex-wrap: wrap;
-  }
-}
 @media only screen and (max-width: 998px) {
   .f__contact {
     flex-wrap: wrap;
@@ -408,21 +391,17 @@ footer * {
 .f__contact * {
   color: #fff;
 }
-@media only screen and (max-width: 1300px) {
-  .f__contact .f__contact__left {
-    order: 2;
-  }
-}
 @media only screen and (max-width: 460px) {
   .f__contact .f__contact__left {
     width: 100%;
+    order: 2;
   }
 }
 .f__contact .f__contact__left p {
   font-size: 16px;
   font-weight: 300;
   margin: 0;
-  padding: 10px 0;
+  padding: 0 0 10px 0;
   color: #c7c7c7;
 }
 .f__contact .f__contact__left h4 {
@@ -440,11 +419,6 @@ footer * {
   color: #c7c7c7;
   display: block;
 }
-@media only screen and (max-width: 1300px) {
-  .f__contact .f__contact__right {
-    order: 1;
-  }
-}
 .f__contact .f__contact__right .img {
   display: block;
   width: 135px;
@@ -459,7 +433,7 @@ footer * {
   justify-content: center;
   gap: 30px;
 }
-@media only screen and (max-width: 998px) {
+@media only screen and (max-width: 1300px) {
   .f__menus .f__menus__wraper {
     gap: 0px;
   }
@@ -467,7 +441,12 @@ footer * {
 @media only screen and (max-width: 768px) {
   .f__menus .f__menus__wraper {
     justify-content: flex-start;
+    margin-bottom: 30px;
   }
+}
+.f__menus .f__menus__wraper ul {
+  padding: 0 20px;
+  margin-bottom: 0;
 }
 .f__menus .f__menus__wraper .f__menus__col {
   max-width: 200px;
@@ -592,33 +571,7 @@ footer * {
 
 .f-company {
   margin-bottom: 30px;
-}
-.f-company .f-company__brand {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  margin-bottom: 30px;
-}
-@media only screen and (max-width: 1300px) {
-  .f-company .f-company__brand {
-    flex-wrap: wrap;
-  }
-}
-@media only screen and (max-width: 460px) {
-  .f-company .f-company__brand {
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 50px;
-  }
-}
-.f-company .f-company__brand p {
-  margin-bottom: 0;
-  font-weight: 700;
-}
-@media only screen and (max-width: 460px) {
-  .f-company .f-company__brand svg {
-    margin: 0 auto;
-  }
+  padding: 0 20px;
 }
 .f-company .f-company__info a,
 .f-company .f-company__info span {
@@ -628,6 +581,43 @@ footer * {
 }
 .f-company .f-company__info a:hover {
   color: #ad8641;
+}
+
+.f-company__brand {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 20px;
+  margin-bottom: 30px;
+  width: 40%;
+}
+@media only screen and (max-width: 998px) {
+  .f-company__brand {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .f-company__brand {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .f-company__brand {
+    justify-content: center;
+    text-align: center;
+  }
+}
+.f-company__brand p {
+  margin-bottom: 0;
+  font-weight: 700;
+}
+@media only screen and (max-width: 460px) {
+  .f-company__brand svg {
+    margin: 0 auto;
+  }
 }
 
 #header {
@@ -741,7 +731,7 @@ footer * {
 }
 #header .navbar ul .menu-item-has-children .sub-menu {
   position: absolute;
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.09);
   display: block;
   padding: 10px;
@@ -766,7 +756,7 @@ footer * {
   display: block;
   padding: 0px 5px;
   font-size: 14px !important;
-  color: #1a070d;
+  color: #fff;
 }
 #header .navbar ul .menu-item-has-children .sub-menu li a span {
   font-size: 16px;
@@ -813,6 +803,12 @@ footer * {
 .js-navbar.active .navbar__brand svg polygon,
 .js-navbar.active .navbar__brand svg rect {
   transition: all 0.3s linear;
+}
+.js-navbar.active .sub-menu {
+  background-color: #fff !important;
+}
+.js-navbar.active .sub-menu li a {
+  color: #1a070d;
 }
 .js-navbar.active .navbar__toggler span {
   color: #1a070d;
@@ -1022,6 +1018,12 @@ footer * {
 }
 .navbar__navigation.active .sub-menu {
   box-shadow: none;
+}
+.navbar__navigation.active .sub-menu {
+  background: none !important;
+}
+.navbar__navigation.active .sub-menu li a {
+  color: #1a070d;
 }
 
 .navbar__toggler {
@@ -1770,30 +1772,35 @@ footer * {
   opacity: 1;
 }
 
-form.wpcf7-form .form-wraper {
+form.wpcf7-form .form-wraper,
+.o-system-form .form-wraper {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
   position: relative;
 }
 @media only screen and (max-width: 768px) {
-  form.wpcf7-form .form-wraper .btn {
+  form.wpcf7-form .form-wraper .btn,
+  .o-system-form .form-wraper .btn {
     display: block;
     width: 100%;
     padding: 10px 20px;
   }
 }
-form.wpcf7-form .control-wrap {
+form.wpcf7-form .control-wrap,
+.o-system-form .control-wrap {
   display: flex;
   gap: 15px;
 }
 @media only screen and (max-width: 768px) {
-  form.wpcf7-form .control-wrap {
+  form.wpcf7-form .control-wrap,
+  .o-system-form .control-wrap {
     flex-wrap: wrap;
     gap: 0px;
   }
 }
-form.wpcf7-form .form-group {
+form.wpcf7-form .form-group,
+.o-system-form .form-group {
   position: relative;
   display: flex;
   align-items: center;
@@ -1801,39 +1808,48 @@ form.wpcf7-form .form-group {
   gap: 10px;
 }
 @media only screen and (max-width: 768px) {
-  form.wpcf7-form .form-group {
+  form.wpcf7-form .form-group,
+  .o-system-form .form-group {
     flex-wrap: wrap;
     gap: 10px;
   }
 }
-form.wpcf7-form .form-group .wpcf7-form-control-wrap {
+form.wpcf7-form .form-group .wpcf7-form-control-wrap,
+.o-system-form .form-group .wpcf7-form-control-wrap {
   width: 100%;
   padding-right: 15px;
   padding-bottom: 15px;
 }
-form.wpcf7-form .form-group .form-control:focus {
+form.wpcf7-form .form-group .form-control:focus,
+.o-system-form .form-group .form-control:focus {
   box-shadow: 0 0 0px 2px rgba(173, 134, 65, 0.51);
   border: 1px solid #ad8641;
 }
-form.wpcf7-form .col-1 {
+form.wpcf7-form .col-1,
+.o-system-form .col-1 {
   width: 100%;
 }
-form.wpcf7-form .col-2 {
+form.wpcf7-form .col-2,
+.o-system-form .col-2 {
   width: 50%;
 }
 @media only screen and (max-width: 768px) {
-  form.wpcf7-form .col-2 {
+  form.wpcf7-form .col-2,
+  .o-system-form .col-2 {
     width: 100%;
   }
 }
-form.wpcf7-form .ch span {
+form.wpcf7-form .ch span,
+.o-system-form .ch span {
   font-size: 12px;
   margin-bottom: 10px;
 }
-form.wpcf7-form label {
+form.wpcf7-form label,
+.o-system-form label {
   width: 100%;
 }
-form.wpcf7-form input {
+form.wpcf7-form input,
+.o-system-form input {
   min-height: 55px;
   background-color: #f4f4f4;
   border: none;
@@ -1841,18 +1857,21 @@ form.wpcf7-form input {
   width: 100%;
   outline: 0;
 }
-form.wpcf7-form textarea {
+form.wpcf7-form textarea,
+.o-system-form textarea {
   min-height: 55px;
   background-color: #f4f4f4;
   border: none;
   padding: 10px;
   width: 100%;
 }
-form.wpcf7-form .ch input {
+form.wpcf7-form .ch input,
+.o-system-form .ch input {
   width: 20px;
   min-height: initial;
 }
-form.wpcf7-form .wpcf7-not-valid-tip {
+form.wpcf7-form .wpcf7-not-valid-tip,
+.o-system-form .wpcf7-not-valid-tip {
   color: #dc3232;
   font-size: 0.7em;
   font-weight: normal;
@@ -2018,30 +2037,35 @@ form.wpcf7-form .wpcf7-not-valid-tip {
   opacity: 1;
 }
 
-form.wpcf7-form .form-wraper {
+form.wpcf7-form .form-wraper,
+.o-system-form .form-wraper {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
   position: relative;
 }
 @media only screen and (max-width: 768px) {
-  form.wpcf7-form .form-wraper .btn {
+  form.wpcf7-form .form-wraper .btn,
+  .o-system-form .form-wraper .btn {
     display: block;
     width: 100%;
     padding: 10px 20px;
   }
 }
-form.wpcf7-form .control-wrap {
+form.wpcf7-form .control-wrap,
+.o-system-form .control-wrap {
   display: flex;
   gap: 15px;
 }
 @media only screen and (max-width: 768px) {
-  form.wpcf7-form .control-wrap {
+  form.wpcf7-form .control-wrap,
+  .o-system-form .control-wrap {
     flex-wrap: wrap;
     gap: 0px;
   }
 }
-form.wpcf7-form .form-group {
+form.wpcf7-form .form-group,
+.o-system-form .form-group {
   position: relative;
   display: flex;
   align-items: center;
@@ -2049,39 +2073,48 @@ form.wpcf7-form .form-group {
   gap: 10px;
 }
 @media only screen and (max-width: 768px) {
-  form.wpcf7-form .form-group {
+  form.wpcf7-form .form-group,
+  .o-system-form .form-group {
     flex-wrap: wrap;
     gap: 10px;
   }
 }
-form.wpcf7-form .form-group .wpcf7-form-control-wrap {
+form.wpcf7-form .form-group .wpcf7-form-control-wrap,
+.o-system-form .form-group .wpcf7-form-control-wrap {
   width: 100%;
   padding-right: 15px;
   padding-bottom: 15px;
 }
-form.wpcf7-form .form-group .form-control:focus {
+form.wpcf7-form .form-group .form-control:focus,
+.o-system-form .form-group .form-control:focus {
   box-shadow: 0 0 0px 2px rgba(173, 134, 65, 0.51);
   border: 1px solid #ad8641;
 }
-form.wpcf7-form .col-1 {
+form.wpcf7-form .col-1,
+.o-system-form .col-1 {
   width: 100%;
 }
-form.wpcf7-form .col-2 {
+form.wpcf7-form .col-2,
+.o-system-form .col-2 {
   width: 50%;
 }
 @media only screen and (max-width: 768px) {
-  form.wpcf7-form .col-2 {
+  form.wpcf7-form .col-2,
+  .o-system-form .col-2 {
     width: 100%;
   }
 }
-form.wpcf7-form .ch span {
+form.wpcf7-form .ch span,
+.o-system-form .ch span {
   font-size: 12px;
   margin-bottom: 10px;
 }
-form.wpcf7-form label {
+form.wpcf7-form label,
+.o-system-form label {
   width: 100%;
 }
-form.wpcf7-form input {
+form.wpcf7-form input,
+.o-system-form input {
   min-height: 55px;
   background-color: #f4f4f4;
   border: none;
@@ -2089,18 +2122,21 @@ form.wpcf7-form input {
   width: 100%;
   outline: 0;
 }
-form.wpcf7-form textarea {
+form.wpcf7-form textarea,
+.o-system-form textarea {
   min-height: 55px;
   background-color: #f4f4f4;
   border: none;
   padding: 10px;
   width: 100%;
 }
-form.wpcf7-form .ch input {
+form.wpcf7-form .ch input,
+.o-system-form .ch input {
   width: 20px;
   min-height: initial;
 }
-form.wpcf7-form .wpcf7-not-valid-tip {
+form.wpcf7-form .wpcf7-not-valid-tip,
+.o-system-form .wpcf7-not-valid-tip {
   color: #dc3232;
   font-size: 0.7em;
   font-weight: normal;
