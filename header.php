@@ -36,7 +36,7 @@
     }
 
     ?>
-    <header id="header" class="<?php echo $bgColor; ?>" itemscope itemtype="http://schema.org/WPHeader" style="background-image:url(<?php echo $bg; ?>);">
+    <header id="header" class="<?php echo $bgColor; ?> bg-scroll" itemscope itemtype="http://schema.org/WPHeader" style="background-image:url(<?php echo $bg; ?>);">
         <div class="js-navbar">
             <div class="container-fluid">
                 <div class="row">

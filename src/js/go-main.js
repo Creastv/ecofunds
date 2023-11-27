@@ -61,3 +61,10 @@
 
   //   // scroll to section
 })();
+
+// let bg = document.querySelector(".b-hero");
+// bg.style.backgroundSize = "" + (100 + x / 40) + "% " + "" + (100 + x / 40) + "% ";
+// document.addEventListener("scroll", () => {
+//   let x = window.pageYOffset;
+//   bg.style.backgroundSize = "" + (100 + x / 40) + "% " + "" + (100 + x / 40) + "% ";
+// });

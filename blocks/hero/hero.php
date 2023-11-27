@@ -21,7 +21,7 @@ if ($btnRevers) {
 ?>
 
 
-<div class="b-hero" style="background-image:url(<?php echo $bg; ?>)">
+<div class="b-hero bg-scroll" style="background-image:url(<?php echo $bg; ?>)">
     <div class="container">
         <div class="row">
             <div class="b-hero__wraper">
