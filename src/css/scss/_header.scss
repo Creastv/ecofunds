@@ -362,6 +362,7 @@
     padding: 20px 0 20px 20px;
     @media #{$lg} {
       position: absolute;
+      z-index: 99999;
       top: 0px;
       right: -105%;
       display: block !important;

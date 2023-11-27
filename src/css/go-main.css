@@ -949,6 +949,7 @@ footer * {
 @media only screen and (max-width: 1300px) {
   .navbar__navigation > ul {
     position: absolute;
+    z-index: 99999;
     top: 0px;
     right: -105%;
     display: block !important;
