@@ -1770,6 +1770,96 @@ footer * {
   opacity: 1;
 }
 
+form.wpcf7-form .form-wraper {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+@media only screen and (max-width: 768px) {
+  form.wpcf7-form .form-wraper .btn {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+  }
+}
+form.wpcf7-form .control-wrap {
+  display: flex;
+  gap: 15px;
+}
+@media only screen and (max-width: 768px) {
+  form.wpcf7-form .control-wrap {
+    flex-wrap: wrap;
+    gap: 0px;
+  }
+}
+form.wpcf7-form .form-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+@media only screen and (max-width: 768px) {
+  form.wpcf7-form .form-group {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+form.wpcf7-form .form-group .wpcf7-form-control-wrap {
+  width: 100%;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+form.wpcf7-form .form-group .form-control:focus {
+  box-shadow: 0 0 0px 2px rgba(173, 134, 65, 0.51);
+  border: 1px solid #ad8641;
+}
+form.wpcf7-form .col-1 {
+  width: 100%;
+}
+form.wpcf7-form .col-2 {
+  width: 50%;
+}
+@media only screen and (max-width: 768px) {
+  form.wpcf7-form .col-2 {
+    width: 100%;
+  }
+}
+form.wpcf7-form .ch span {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+form.wpcf7-form label {
+  width: 100%;
+}
+form.wpcf7-form input {
+  min-height: 55px;
+  background-color: #f4f4f4;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  outline: 0;
+}
+form.wpcf7-form textarea {
+  min-height: 55px;
+  background-color: #f4f4f4;
+  border: none;
+  padding: 10px;
+  width: 100%;
+}
+form.wpcf7-form .ch input {
+  width: 20px;
+  min-height: initial;
+}
+form.wpcf7-form .wpcf7-not-valid-tip {
+  color: #dc3232;
+  font-size: 0.7em;
+  font-weight: normal;
+  display: block;
+  margin-top: 10px;
+}
+
 .b-form {
   width: 100vw !important;
   margin-left: -50vw !important;
@@ -1791,6 +1881,9 @@ footer * {
 }
 .b-form .b-form__wraper .subhead-h b {
   font-size: 41px;
+}
+.b-form .b-form__wraper input {
+  background-color: #fff;
 }
 .b-form .b-form__wraper .b-form__col {
   position: relative;
@@ -1845,96 +1938,6 @@ footer * {
 }
 .b-form input {
   background-color: #fff;
-}
-
-form .form-wraper {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-}
-@media only screen and (max-width: 768px) {
-  form .form-wraper .btn {
-    display: block;
-    width: 100%;
-    padding: 10px 20px;
-  }
-}
-form .control-wrap {
-  display: flex;
-  gap: 15px;
-}
-@media only screen and (max-width: 768px) {
-  form .control-wrap {
-    flex-wrap: wrap;
-    gap: 0px;
-  }
-}
-form .form-group {
-  position: relative;
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-  gap: 10px;
-}
-@media only screen and (max-width: 768px) {
-  form .form-group {
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-}
-form .form-group .wpcf7-form-control-wrap {
-  width: 100%;
-  padding-right: 15px;
-  padding-bottom: 15px;
-}
-form .form-group .form-control:focus {
-  box-shadow: 0 0 0px 2px rgba(173, 134, 65, 0.51);
-  border: 1px solid #ad8641;
-}
-form .col-1 {
-  width: 100%;
-}
-form .col-2 {
-  width: 50%;
-}
-@media only screen and (max-width: 768px) {
-  form .col-2 {
-    width: 100%;
-  }
-}
-form .ch span {
-  font-size: 12px;
-  margin-bottom: 10px;
-}
-form label {
-  width: 100%;
-}
-form input {
-  min-height: 55px;
-  background-color: #f4f4f4;
-  border: none;
-  padding: 10px;
-  width: 100%;
-  outline: 0;
-}
-form textarea {
-  min-height: 55px;
-  background-color: #f4f4f4;
-  border: none;
-  padding: 10px;
-  width: 100%;
-}
-form .ch input {
-  width: 20px;
-  min-height: initial;
-}
-form .wpcf7-not-valid-tip {
-  color: #dc3232;
-  font-size: 0.7em;
-  font-weight: normal;
-  display: block;
-  margin-top: 10px;
 }
 
 .login-submit {
@@ -2015,6 +2018,96 @@ form .wpcf7-not-valid-tip {
   opacity: 1;
 }
 
+form.wpcf7-form .form-wraper {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+@media only screen and (max-width: 768px) {
+  form.wpcf7-form .form-wraper .btn {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+  }
+}
+form.wpcf7-form .control-wrap {
+  display: flex;
+  gap: 15px;
+}
+@media only screen and (max-width: 768px) {
+  form.wpcf7-form .control-wrap {
+    flex-wrap: wrap;
+    gap: 0px;
+  }
+}
+form.wpcf7-form .form-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+@media only screen and (max-width: 768px) {
+  form.wpcf7-form .form-group {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+form.wpcf7-form .form-group .wpcf7-form-control-wrap {
+  width: 100%;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+form.wpcf7-form .form-group .form-control:focus {
+  box-shadow: 0 0 0px 2px rgba(173, 134, 65, 0.51);
+  border: 1px solid #ad8641;
+}
+form.wpcf7-form .col-1 {
+  width: 100%;
+}
+form.wpcf7-form .col-2 {
+  width: 50%;
+}
+@media only screen and (max-width: 768px) {
+  form.wpcf7-form .col-2 {
+    width: 100%;
+  }
+}
+form.wpcf7-form .ch span {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+form.wpcf7-form label {
+  width: 100%;
+}
+form.wpcf7-form input {
+  min-height: 55px;
+  background-color: #f4f4f4;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  outline: 0;
+}
+form.wpcf7-form textarea {
+  min-height: 55px;
+  background-color: #f4f4f4;
+  border: none;
+  padding: 10px;
+  width: 100%;
+}
+form.wpcf7-form .ch input {
+  width: 20px;
+  min-height: initial;
+}
+form.wpcf7-form .wpcf7-not-valid-tip {
+  color: #dc3232;
+  font-size: 0.7em;
+  font-weight: normal;
+  display: block;
+  margin-top: 10px;
+}
+
 .b-form {
   width: 100vw !important;
   margin-left: -50vw !important;
@@ -2036,6 +2129,9 @@ form .wpcf7-not-valid-tip {
 }
 .b-form .b-form__wraper .subhead-h b {
   font-size: 41px;
+}
+.b-form .b-form__wraper input {
+  background-color: #fff;
 }
 .b-form .b-form__wraper .b-form__col {
   position: relative;
@@ -2090,96 +2186,6 @@ form .wpcf7-not-valid-tip {
 }
 .b-form input {
   background-color: #fff;
-}
-
-form .form-wraper {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-}
-@media only screen and (max-width: 768px) {
-  form .form-wraper .btn {
-    display: block;
-    width: 100%;
-    padding: 10px 20px;
-  }
-}
-form .control-wrap {
-  display: flex;
-  gap: 15px;
-}
-@media only screen and (max-width: 768px) {
-  form .control-wrap {
-    flex-wrap: wrap;
-    gap: 0px;
-  }
-}
-form .form-group {
-  position: relative;
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-  gap: 10px;
-}
-@media only screen and (max-width: 768px) {
-  form .form-group {
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-}
-form .form-group .wpcf7-form-control-wrap {
-  width: 100%;
-  padding-right: 15px;
-  padding-bottom: 15px;
-}
-form .form-group .form-control:focus {
-  box-shadow: 0 0 0px 2px rgba(173, 134, 65, 0.51);
-  border: 1px solid #ad8641;
-}
-form .col-1 {
-  width: 100%;
-}
-form .col-2 {
-  width: 50%;
-}
-@media only screen and (max-width: 768px) {
-  form .col-2 {
-    width: 100%;
-  }
-}
-form .ch span {
-  font-size: 12px;
-  margin-bottom: 10px;
-}
-form label {
-  width: 100%;
-}
-form input {
-  min-height: 55px;
-  background-color: #f4f4f4;
-  border: none;
-  padding: 10px;
-  width: 100%;
-  outline: 0;
-}
-form textarea {
-  min-height: 55px;
-  background-color: #f4f4f4;
-  border: none;
-  padding: 10px;
-  width: 100%;
-}
-form .ch input {
-  width: 20px;
-  min-height: initial;
-}
-form .wpcf7-not-valid-tip {
-  color: #dc3232;
-  font-size: 0.7em;
-  font-weight: normal;
-  display: block;
-  margin-top: 10px;
 }
 
 .login-submit {
