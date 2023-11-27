@@ -16,9 +16,9 @@
       img {
         width: 100%;
         height: auto;
-        position: -webkit-sticky;
-        position: sticky;
-        top: 100px;
+        // position: -webkit-sticky;
+        // position: sticky;
+        // top: 100px;
         @media #{$sm} {
           position: relative !important;
           width: 50%;
@@ -54,6 +54,11 @@
         font-weight: 500;
         color: $main;
         margin-bottom: 20px;
+        span {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
       }
       .contact {
         font-size: 18px;

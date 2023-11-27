@@ -30,6 +30,7 @@
     }
     @media #{$sm} {
       padding: 10px 0;
+      gap: 0px;
     }
     .navbar__wraper {
       display: flex;
@@ -292,7 +293,7 @@
     flex: auto;
   }
   @media #{$sm} {
-    max-width: 70%;
+    // max-width: 70%;
   }
   // flex: auto;
   * {
@@ -341,6 +342,7 @@
     }
   }
   #logo--large {
+    padding: 15px;
     display: block;
     @media #{$sm} {
       padding: 15px 0;

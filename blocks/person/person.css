@@ -22,8 +22,6 @@
 .b-person .b-person_wraper .img img {
   width: 100%;
   height: auto;
-  position: sticky;
-  top: 100px;
 }
 @media only screen and (max-width: 768px) {
   .b-person .b-person_wraper .img img {
@@ -63,6 +61,11 @@
   font-weight: 500;
   color: #ad8641;
   margin-bottom: 20px;
+}
+.b-person .b-person_wraper .content .country span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .b-person .b-person_wraper .content .contact {
   font-size: 18px;

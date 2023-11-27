@@ -449,7 +449,6 @@ footer * {
   display: block;
   width: 135px;
   height: 135px;
-  border-radius: 100%;
   overflow: hidden;
 }
 
@@ -666,6 +665,7 @@ footer * {
 @media only screen and (max-width: 768px) {
   #header .navbar {
     padding: 10px 0;
+    gap: 0px;
   }
 }
 #header .navbar .navbar__wraper {
@@ -869,11 +869,6 @@ footer * {
     flex: auto;
   }
 }
-@media only screen and (max-width: 768px) {
-  .navbar__brand {
-    max-width: 70%;
-  }
-}
 .navbar__brand * {
   color: #fff;
 }
@@ -928,6 +923,7 @@ footer * {
   }
 }
 .navbar__brand #logo--large {
+  padding: 15px;
   display: block;
 }
 @media only screen and (max-width: 768px) {

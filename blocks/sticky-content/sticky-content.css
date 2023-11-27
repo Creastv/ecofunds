@@ -118,8 +118,6 @@
 }
 .b-sticky-gsallery .galery {
   height: 600px;
-  position: sticky;
-  top: 100px;
 }
 @media only screen and (max-width: 998px) {
   .b-sticky-gsallery .galery {
