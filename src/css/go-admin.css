@@ -515,6 +515,7 @@ form.wpcf7-form textarea,
   border: none;
   padding: 10px;
   width: 100%;
+  outline: 0;
 }
 form.wpcf7-form .ch input,
 .o-system-form .ch input {
