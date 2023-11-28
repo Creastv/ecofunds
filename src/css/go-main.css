@@ -281,6 +281,10 @@ body {
   }
 }
 
+.wide-container {
+  padding: 20px 0;
+}
+
 footer {
   position: relative;
   background-color: #000;

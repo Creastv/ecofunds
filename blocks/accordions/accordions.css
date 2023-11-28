@@ -186,6 +186,10 @@ body {
   }
 }
 
+.wide-container {
+  padding: 20px 0;
+}
+
 .faq__wraper {
   display: flex;
 }

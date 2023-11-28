@@ -187,6 +187,10 @@ body {
   }
 }
 
+.wide-container {
+  padding: 20px 0;
+}
+
 .posts-wraper {
   display: flex;
   flex-wrap: wrap;

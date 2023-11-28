@@ -6,6 +6,8 @@
 </div>
 </main>
 <?php get_template_part('templates-parts/parts/posts'); ?>
+
+<?php get_template_part('templates-parts/footer/footer', 'widget'); ?>
 <?php get_template_part('templates-parts/footer/footer', 'cta'); ?>
 
 <footer id="footer" itemscope itemtype="http://schema.org/WPFooter">
