@@ -106,7 +106,7 @@ function custom_redirect() {
    $term = get_queried_object(); 
    $projects = get_terms( 'cat-projects', 'orderby=count' );
 
-    if ( $post->post_type == 'projects' && $term->taxonomy == 'cat-projects' && ! is_user_logged_in() ) {
+    if (  is_singular('projects') && $post->post_type == 'projects' && $term->taxonomy == 'cat-projects' && ! is_user_logged_in() ) {
       wp_redirect( home_url() ); 
       exit();
     }    

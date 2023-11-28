@@ -60,7 +60,7 @@ $term = get_queried_object();
 					elseif ( is_tax( 'post_format', 'post-format-link' ) ) :
 						_e( 'Links', 'go' );
 					else :
-						_e( 'Blog', 'go' );
+						_e( 'Aktualności', 'go' );
 				endif; ?>
                         <?php if($term->taxonomy == "Style") { ?>
                 </h2>
