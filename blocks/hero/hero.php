@@ -13,7 +13,7 @@ if ($btnMain) {
     $btnMain_target = $btnMain['target'] ? $btnMain['target'] : '_self';
 }
 if ($btnRevers) {
-    $$btnRevers_url = $btnRevers['url'];
+    $btnRevers_url = $btnRevers['url'];
     $btnRevers_title = $btnRevers['title'];
     $btnRevers_target = $btnRevers['target'] ? $btnRevers['target'] : '_self';
   
