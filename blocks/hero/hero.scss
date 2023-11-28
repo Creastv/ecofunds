@@ -85,18 +85,33 @@
         a {
           color: #fff;
           border: 1px solid #fff;
-          padding: 10px 55px 10px 20px !important;
+          padding: 10px 60px !important;
           max-width: 260px;
           min-height: 62px;
-          &:hover {
-            border: 1px solid transparent;
-          }
+          position: relative;
+          text-align: center;
+
           svg {
             width: 19px;
             display: block;
+            position: absolute;
+            left: 0px;
+            top: 50%;
+            transform: translate(10px, -50%);
           }
           span {
-            width: calc(100% - 20px);
+            // width: calc(100% - 20px);
+          }
+          &:hover {
+            border: 1px solid transparent;
+            svg {
+              transform: translate(20px, -50%);
+            }
+          }
+          &:focus {
+            svg {
+              transform: translate(30px, -50%);
+            }
           }
         }
       }
