@@ -1,0 +1,7 @@
+.wide-container {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  margin-left: -50vw;
+  padding: 20px 0;
+}/*# sourceMappingURL=wide-container.css.map */

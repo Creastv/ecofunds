@@ -19,6 +19,28 @@ function register_acf_block_types() {
       },
     ));
     acf_register_block_type(array(
+        'name'              => 'wide-container',
+        'title'             => __('Szeroki kontener'),
+        'render_template'   => 'blocks/wide-container/wide-container.php',
+        'category'          => 'formatting',
+        'icon' => array(
+          'background' => '#5f031f',
+          'foreground' => '#fff',
+          'src' => 'ellipsis',
+        ),
+      'mode'            => 'preview', 
+      'keywords'          => array( 'wide-container' ),
+       'supports'		=> [
+          'align'			=> false,
+          'anchor'		=> true,
+          'customClassName'	=> true,
+          'jsx' 			=> true,
+        ],
+      'enqueue_assets'    => function(){
+          wp_enqueue_style( 'go-wide-container',  get_template_directory_uri() . '/blocks/wide-container/wide-container.min.css' );
+      },
+    ));
+    acf_register_block_type(array(
         'name'              => 'accordions',
         'title'             => __('Accordions'),
         'render_template'   => 'blocks/accordions/block-accordions.php',
