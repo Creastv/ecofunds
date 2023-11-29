@@ -545,9 +545,6 @@ footer * {
 .f__info * {
   color: #c7c7c7;
 }
-.f__info svg {
-  opacity: 0.6;
-}
 
 .f__socialmedia {
   display: flex;
