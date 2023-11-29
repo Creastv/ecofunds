@@ -40,6 +40,24 @@ function register_acf_block_types() {
           wp_enqueue_style( 'go-wide-container',  get_template_directory_uri() . '/blocks/wide-container/wide-container.min.css' );
       },
     ));
+     acf_register_block_type(array(
+        'name'              => 'seo-loadmore',
+        'title'             => __('Seo - load more'),
+        'render_template'   => 'blocks/seo-loadmore/seo-loadmore.php',
+        'category'          => 'formatting',
+        'icon' => array(
+          'background' => '#e11f26',
+          'foreground' => '#fff',
+          'src' => 'ellipsis',
+        ),
+      'mode'            => 'preview', 
+      'keywords'          => array( 'seo-loadmore' ),
+      'supports' => array( 'align' =>false ),
+      'enqueue_assets'    => function(){
+          wp_enqueue_style( 'go-seo-loadmore',  get_template_directory_uri() . '/blocks/seo-loadmore/seo-loadmore.min.css' );
+          wp_enqueue_script('go-seo-loadmore-js', get_template_directory_uri().'/blocks/seo-loadmore/seo-loadmore.js', array( 'jquery' ),'4', true );
+      },
+    ));
     acf_register_block_type(array(
         'name'              => 'accordions',
         'title'             => __('Accordions'),

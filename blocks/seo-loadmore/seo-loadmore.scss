@@ -1,0 +1,52 @@
+@import "../../src/css/scss/variable";
+
+.go-seo-loadmore {
+  padding: 50px 0;
+}
+.go-seo-loadmore__wraper {
+  transition: all 0.3s 0s ease;
+  height: 150px;
+  max-width: 950px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+
+  // margin-bottom: 50px;
+  &:after {
+    -webkit-transition: all 0.3s 0s ease;
+    transition: all 0.3s 0s ease;
+    position: absolute;
+    content: "";
+    background: #fff;
+    background: -webkit-gradient(linear, left bottom, left top, from(#fff), to(rgba(255, 255, 255, 0)));
+    background: linear-gradient(0deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+    width: 100%;
+    height: 200px;
+    bottom: 0;
+  }
+}
+.btn__wrap {
+  text-align: center;
+  width: 200px;
+  text-align: center;
+  margin: 0 auto;
+  a {
+    display: inline-block;
+  }
+  a.open {
+    background-color: $main;
+  }
+}
+.go-seo-loadmore__wraper.seo-open {
+  height: auto !important;
+  &:after {
+    display: none;
+  }
+}
+
+.go-seo-loadmore__wraper p:nth-child(1)::first-letter {
+  initial-letter: 2;
+  font-weight: bold;
+  margin-right: 10px;
+}
