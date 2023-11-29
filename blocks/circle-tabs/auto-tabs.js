@@ -8,6 +8,8 @@ class Tabs {
   init() {
     if (!this.validate()) return;
     this.openTabsOnClick();
+    this.stop();
+    this.run();
     this.autoChange();
     if (this.config.loading) {
       this.loader();
@@ -58,6 +60,28 @@ class Tabs {
       });
     }
   }
+  stop() {
+    for (let i = 0; i < this.getItems().allTabs.length; i++) {
+      var that = this;
+      this.getItems().allTabs[i].addEventListener("mouseover", function () {
+        clearInterval(that.intervalID);
+        var dataTab = this.dataset.tab;
+        that.contentChange(dataTab);
+        // that.autoChange();
+      });
+    }
+  }
+  run() {
+    for (let i = 0; i < this.getItems().allTabs.length; i++) {
+      var that = this;
+      this.getItems().allTabs[i].addEventListener("mouseout", function () {
+        // clearInterval(that.intervalID);
+        // var dataTab = this.dataset.tab;
+        // that.contentChange(dataTab);
+        that.autoChange();
+      });
+    }
+  }
   contentChange(e) {
     var singleTabElement = this.getItems().mainContainer.querySelector('[data-tab="' + e + '"]');
     var singleTabContent = this.getItems().mainContainer.querySelector(`[data-tab-content=${e}]`);
@@ -104,7 +128,7 @@ class Tabs {
       return;
     }
     var that = this;
-    var timer = this.config.timer || 2000;
+    var timer = this.config.timer || 2500;
     var counter = 0;
 
     this.getItems().allTabs.forEach(function (i, j) {

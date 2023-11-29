@@ -38,10 +38,11 @@ $desc = get_field( 'opis' );
                 <div class="country">
                     <span>
                         <?php _e('kraj: ', 'cr'); ?>
+                        
+                        <?php echo $country['kraj'] ? $country['kraj'] : false; ?>
                          <?php if( $country['flaga']) : ?>
                             <?php echo  wp_get_attachment_image(  $country['flaga'], 'full' ); ?>
                         <?php endif; ?>
-                        <?php echo $country['kraj'] ? $country['kraj'] : false; ?>
                     </span>
                 </div>
                 <?php endif; ?>
