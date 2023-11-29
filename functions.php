@@ -56,7 +56,18 @@ function filter_plugin_updates( $value ) {
 	}
 	return $value;
 }
-
+// Zmaina logo wp-login.php
+function custom_login_logo() {
+    echo '<style type="text/css">
+        h1 a {
+          background-image: url('.get_stylesheet_directory_uri().'/src/img/logo.png) !important;
+          background-size:cover!important;
+          height: 160px!important;
+          width: 199px!important;
+         }
+    </style>';
+}
+add_action('login_head', 'custom_login_logo');
 // colors
 function ka_override_MCE_options($init)
   {
