@@ -46,7 +46,7 @@ function register_acf_block_types() {
         'render_template'   => 'blocks/seo-loadmore/seo-loadmore.php',
         'category'          => 'formatting',
         'icon' => array(
-          'background' => '#e11f26',
+          'background' => '#5f031f',
           'foreground' => '#fff',
           'src' => 'ellipsis',
         ),
