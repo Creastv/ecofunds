@@ -23,7 +23,7 @@
 }
 @media only screen and (max-width: 768px) {
   .b-hero .b-hero__col img {
-    width: 150px;
+    width: 200px;
     height: auto;
   }
 }
