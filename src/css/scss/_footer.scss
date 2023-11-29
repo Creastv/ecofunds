@@ -265,7 +265,7 @@ footer {
       text-align: center;
     }
     small {
-      opacity: 0.4;
+      // opacity: 0.4;
     }
   }
   a {
@@ -275,6 +275,9 @@ footer {
   }
   * {
     color: #c7c7c7;
+  }
+  svg {
+    opacity: 0.6;
   }
 }
 // Social media
@@ -288,7 +291,7 @@ footer {
     order: 1;
   }
   > span {
-    opacity: 0.4;
+    // opacity: 0.4;
     font-weight: 300;
   }
   ul {

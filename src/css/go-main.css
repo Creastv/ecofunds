@@ -539,14 +539,14 @@ footer * {
     text-align: center;
   }
 }
-.f__info p small {
-  opacity: 0.4;
-}
 .f__info a:hover {
   color: #efd6ae;
 }
 .f__info * {
   color: #c7c7c7;
+}
+.f__info svg {
+  opacity: 0.6;
 }
 
 .f__socialmedia {
@@ -562,7 +562,6 @@ footer * {
   }
 }
 .f__socialmedia > span {
-  opacity: 0.4;
   font-weight: 300;
 }
 .f__socialmedia ul {
