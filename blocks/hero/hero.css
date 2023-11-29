@@ -103,7 +103,7 @@
   color: #fff;
   border: 1px solid #fff;
   padding: 10px 60px !important;
-  max-width: 260px;
+  min-width: 260px;
   min-height: 62px;
   position: relative;
   text-align: center;
